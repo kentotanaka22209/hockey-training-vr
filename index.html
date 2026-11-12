@@ -254,10 +254,10 @@
     <div class="overlay" id="startScreen">
       <div class="card">
         <h1><span class="en">ICE HOCKEY VR TRAINING</span>ホッケートレーニングVR</h1>
-        <p class="lead">60秒1セッション。モードを選んでスタートしてな。だんだん速く・シビアになっていくで。</p>
+        <p class="lead">おすすめは <b>MR（パススルー）</b>：部屋も、実物のスティックもパックもそのまま見える状態で、ホログラムの障害物と合図に実物で反応する練習や。60秒1セッション、だんだん速く・シビアになっていくで。</p>
         <div class="modes" role="group" aria-label="モード選択">
-          <button class="modebtn sel" id="modeBody" type="button"><b>ボディ回避モード</b><span>体ごと動いて障害物をかわす。リンクを滑ってくる3種の障害物対応。</span></button>
-          <button class="modebtn" id="modeHandling" type="button"><b>ハンドリングモード</b><span>体はその場。スティックでパックを動かして、流れてくる小ボールをよける。</span></button>
+          <button class="modebtn sel" id="modeBody" type="button"><b>ボディ回避モード</b><span>体ごと動いて障害物をかわす。MRでは実物のスティックを持ったまま、部屋の床に光るレーンを見て動ける。</span></button>
+          <button class="modebtn" id="modeHandling" type="button"><b>反応ハンドリング</b><span>実物のスティックとパックで練習。ボールの合図（左／右／引け）に合わせて、実物のパックを素早く動かす。</span></button>
         </div>
         <div id="bodyInfo">
         <div class="obstacles">
@@ -266,25 +266,29 @@
           <div class="ob bar"><div class="tag">LOW</div><div><b>ローバー</b><p>頭の高さにバーが来る。パワーポジションまでグッと沈んで（頭の高さ85%以下）くぐり抜けて。</p></div></div>
         </div>
         <p class="howto">
-          <b>VR（Quest 3）:</b> 実際に左右へサイドステップ（外レーンは中心から約±55cm）。スティックでもレーン移動OK。しゃがみは本当に沈むだけ。<br />
+          <b>MR（Quest 3・推奨）:</b> 部屋が見えたまま、床の光るレーンを目安に実際に左右へサイドステップ（外レーンは中心から約±55cm）。実物のスティックを持ってOK、足元に実物のパックを置いてもええ。しゃがみは本当に沈むだけ。<br />
+          <b>VR（仮想リンク）:</b> 動きは同じで、舞台が仮想リンクになる。<br />
           <b>PC:</b> A/D・←/→でレーン移動、S・↓・Spaceでしゃがみ。マウスドラッグでも動ける。画面のボタンも使えるで。
         </p>
         </div>
         <div id="handlingInfo" style="display:none">
         <div class="obstacles">
-          <div class="ob gate"><div class="tag">BALL</div><div><b>小ボール</b><p>テニスボール大の小ボールが氷の上を転がってくる。体やなくパックを動かして、ボールの進路から逃がして。たまに2個同時・途中でレーンを変えるフェイントもあるで。</p></div></div>
-          <div class="ob bar"><div class="tag">SWEEP</div><div><b>スイープ（ポークチェック）</b><p>低いバーが手前まで迫ってきて一瞬止まる。パックを手前に引くか、奥へ押し出して、バーの届く範囲から逃がして。</p></div></div>
+          <div class="ob gate"><div class="tag">準備</div><div><b>セットアップ</b><p>床の開けた場所で、<b>実物のパックを実物のスティックのブレードに当てて</b>レディポジションを取る。コントローラーはスティックを持つ<b>トップハンドと一緒に握る</b>（またはスティック上部に固定）。その姿勢でトリガー／スタートを押すと、手の位置が基準（キャリブレーション）になる。</p></div></div>
+          <div class="ob def"><div class="tag">合図</div><div><b>ボール＋合図</b><p>ホログラムのボールが床を転がって寄ってきて、間近で進路が決まる。その瞬間、動かす方向の合図が出る：<b>←左 ／ 右→ ／ 引け！</b>（床のゲートも光る）。合図の方向へ、実物のパックをスティックで素早く動かしてな。</p></div></div>
+          <div class="ob bar"><div class="tag">判定</div><div><b>判定について（正直な話）</b><p>パック自体はQuestで追跡できないため、判定はスティックを持つ手の動き（方向と速さ）で行います。練習自体は実物のスティックとパックで行います。制限時間はだんだん短くなる（約0.7秒→0.4秒）で。</p></div></div>
         </div>
         <p class="howto">
-          <b>VR（Quest 3）:</b> 利き手コントローラーの位置がそのままパックの位置になる。氷の上の四角いゾーン内（左右・前後）でスティックハンドリングしてな。<br />
-          <b>PC:</b> マウス（タッチならドラッグ）でパックを動かす。WASD・矢印キーでも動かせるで。
+          <b>MR（Quest 3・推奨）:</b> 部屋と実物のスティック・パックが見えたまま練習できる。床を傷つけたくない／パックが滑らへん床では、シューティングパッドや滑らかな板の上でやってな。<br />
+          <b>PC:</b> 合図に合わせて A/D・←/→（左／右）、S・↓（引く）か、画面のボタンを押して反応してな。
         </p>
         </div>
-        <div class="safety">安全のために：周りに何もない開けた場所で、ガーディアン（境界表示）をONにして遊んでな。実際に体を動かすゲームやから、周りに人がおらんか確認してからスタートして。</div>
+        <div class="safety">安全のために：周りに何もない開けた場所で、ガーディアン（境界表示）をONにして遊んでな。MRでは周りが見えるとはいえ、スティックを振る範囲に人や家具がないか、始める前に必ず確認して。床の保護にはシューティングパッド等の滑らかな面がおすすめ。</div>
         <div class="btnrow">
-          <button class="bigbtn primary" id="startBtn" type="button">スタート（PCモード）</button>
-          <button class="bigbtn vr" id="vrBtn" type="button">VRに入る（Quest）</button>
+          <button class="bigbtn primary" id="vrBtn" type="button">MRで練習（パススルー）</button>
+          <button class="bigbtn vr" id="startBtn" type="button">スタート（PCモード）</button>
+          <button class="bigbtn vr" id="vrOnlyBtn" type="button">VRで練習（仮想リンク）</button>
         </div>
+        <p class="howto" style="margin-top:10px"><b>MRが一番おすすめ</b>：部屋・実物のスティック・実物のパックが見えたまま練習できるモードや。MR（immersive-ar）に非対応の環境では、押すと自動でVRに切り替わる。VRは周りが見えへん仮想リンク版やで。</p>
         <p id="xrNote">WebXRの対応を確認中…</p>
         <div id="xrDiag" aria-live="polite"></div>
         <div class="diagrow">
@@ -309,10 +313,11 @@
         </div>
         <div class="btnrow">
           <button class="bigbtn primary" id="againBtn" type="button">もう一回</button>
-          <button class="bigbtn vr" id="vrAgainBtn" type="button">VRでもう一回</button>
+          <button class="bigbtn vr" id="vrAgainBtn" type="button">MRでもう一回</button>
+          <button class="bigbtn vr" id="vrOnlyAgainBtn" type="button">VRでもう一回</button>
           <button class="bigbtn vr" id="backBtn" type="button">タイトルに戻る</button>
         </div>
-        <p id="xrNote2" style="margin:10px 0 0;font-size:12.5px;color:var(--ink-dim);">VR中はコントローラーのトリガーでも再スタートできるで。</p>
+        <p id="xrNote2" style="margin:10px 0 0;font-size:12.5px;color:var(--ink-dim);">XR中はコントローラーのトリガーでも再スタートできるで。</p>
       </div>
     </div>
 
@@ -372,15 +377,19 @@
     /* ================= three setup ================= */
     var stage = $('stage');
     var scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x0a2033);
-    scene.fog = new THREE.Fog(0x0a2033, 34, 95);
+    var VR_BG = new THREE.Color(0x0a2033);
+    var VR_FOG = new THREE.Fog(0x0a2033, 34, 95);
+    scene.background = VR_BG;
+    scene.fog = VR_FOG;
+    var xrMode = 'vr'; /* 'ar' (passthrough MR) or 'vr' (virtual rink) */
 
     var camera = new THREE.PerspectiveCamera(68, innerWidth/innerHeight, 0.08, 220);
     camera.position.set(0,1.7,3.4);
 
-    var renderer = new THREE.WebGLRenderer({ antialias:true, powerPreference:'high-performance' });
+    var renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true, powerPreference:'high-performance' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio||1, 2));
     renderer.setSize(innerWidth, innerHeight);
+    renderer.setClearColor(0x000000, 0);
     renderer.xr.enabled = true;
     try{ renderer.xr.setReferenceSpaceType('local-floor'); }catch(e){}
     stage.appendChild(renderer.domElement);
@@ -474,6 +483,78 @@
     /* safety ring on the floor at the play center */
     var safetyRing = new THREE.Mesh(new THREE.RingGeometry(SAFE_RADIUS-0.045, SAFE_RADIUS+0.045, 48), MAT.ringOk);
     safetyRing.rotation.x = -Math.PI/2; safetyRing.position.set(0,0.02,0); scene.add(safetyRing);
+
+    /* ================= MR floor decals (glow on the REAL floor in passthrough) ================= */
+    var decalGroup = new THREE.Group(); decalGroup.visible=false; scene.add(decalGroup);
+    (function buildDecals(){
+      var dm = new THREE.MeshBasicMaterial({ color:0x35d3ff, transparent:true, opacity:0.55, depthWrite:false });
+      [-1,1].forEach(function(gx){
+        for(var s=0;s<14;s++){
+          var seg = new THREE.Mesh(new THREE.PlaneGeometry(0.07,1.5), dm);
+          seg.rotation.x=-Math.PI/2; seg.position.set(gx*0.55, 0.012, -s*2.2); decalGroup.add(seg);
+        }
+      });
+      [-0.55,0,0.55].forEach(function(lx){
+        var dot = new THREE.Mesh(new THREE.RingGeometry(0.13,0.19,24),
+          new THREE.MeshBasicMaterial({ color:0xffb02e, transparent:true, opacity:0.8, depthWrite:false, side:THREE.DoubleSide }));
+        dot.rotation.x=-Math.PI/2; dot.position.set(lx,0.012,0); decalGroup.add(dot);
+      });
+    })();
+
+    /* cue gates for reaction handling (left / right / pull-back floor gates) */
+    function makeCueGate(color){
+      var g = new THREE.Group();
+      var fill = new THREE.Mesh(new THREE.PlaneGeometry(0.85,0.85),
+        new THREE.MeshBasicMaterial({ color:color, transparent:true, opacity:0.30, depthWrite:false }));
+      fill.rotation.x=-Math.PI/2; fill.position.y=0.014; g.add(fill);
+      var ring = new THREE.Mesh(new THREE.RingGeometry(0.36,0.44,28),
+        new THREE.MeshBasicMaterial({ color:color, transparent:true, opacity:0.95, depthWrite:false, side:THREE.DoubleSide }));
+      ring.rotation.x=-Math.PI/2; ring.position.y=0.016; g.add(ring);
+      var cone = new THREE.Mesh(new THREE.ConeGeometry(0.13,0.3,4),
+        new THREE.MeshBasicMaterial({ color:color, transparent:true, opacity:0.95 }));
+      cone.position.y=0.42; g.add(cone);
+      g.visible=false; scene.add(g);
+      return g;
+    }
+    var cueGates = {
+      left:  makeCueGate(0x43e08a),
+      right: makeCueGate(0x43e08a),
+      pull:  makeCueGate(0xffb02e)
+    };
+    cueGates.left.position.set(-0.85,0,-0.55);
+    cueGates.right.position.set(0.85,0,-0.55);
+    cueGates.pull.position.set(0,0,0.75);
+    function hideCueGates(){ cueGates.left.visible=false; cueGates.right.visible=false; cueGates.pull.visible=false; }
+    /* danger lane glow: the lane the ball committed to flashes red on the floor */
+    var dangerDecal = new THREE.Mesh(new THREE.PlaneGeometry(1.05,26),
+      new THREE.MeshBasicMaterial({ color:0xff3b30, transparent:true, opacity:0.0, depthWrite:false }));
+    dangerDecal.rotation.x=-Math.PI/2; dangerDecal.position.set(0,0.011,-14); dangerDecal.visible=false; scene.add(dangerDecal);
+
+    /* switch the world between virtual rink (VR/PC) and passthrough holograms (AR) */
+    var holoMats = null;
+    function applyXRMode(){
+      var ar = (xrMode==='ar') && renderer.xr.isPresenting;
+      if(ar){
+        scene.background = null; scene.fog = null;
+        rink.visible = false;
+        decalGroup.visible = (G.mode==='body');
+        if(!holoMats){
+          holoMats = [];
+          [MAT.red,MAT.redDark,MAT.teal,MAT.tealDark,MAT.gate,MAT.bar,MAT.post,MAT.dark,MAT.skin].forEach(function(m){
+            holoMats.push({ m:m, op:m.opacity, tr:m.transparent });
+            m.transparent = true; m.opacity = 0.72;
+          });
+        }
+      } else {
+        scene.background = VR_BG; scene.fog = VR_FOG;
+        rink.visible = true;
+        decalGroup.visible = false;
+        if(holoMats){
+          holoMats.forEach(function(h){ h.m.opacity=h.op; h.m.transparent=h.tr; });
+          holoMats = null;
+        }
+      }
+    }
 
     /* ================= player avatar (desktop view) ================= */
     var avatar = new THREE.Group(); scene.add(avatar);
@@ -611,99 +692,117 @@
     })();
     function sweepDanger(pz){ return pz>=-1.33 && pz<=-0.67; }
 
+    /* ===== reaction handling drill =====
+       The real puck cannot be tracked by Quest, so judgement uses the
+       hand controller's movement (direction + speed) after the cue. */
+    var H = {
+      phase:'wait', waitT:1.2, ball:null, cueDir:null, cueT:0, window:0.7,
+      handStart:new THREE.Vector3(), puckStart:{x:0,z:-1.0}, hasHandStart:false, neutral:null
+    };
+    var CUE_TXT = { left:'← 左へ！', right:'右へ →', pull:'引け！' };
+    function cueWindow(){ return lerp(0.7, 0.4, difficulty()); }
+    function hideCueVisuals(){ hideCueGates(); dangerDecal.visible=false; dangerDecal.material.opacity=0; }
+    function resolveDrill(ok, rt){
+      var o = (ok && rt!=null) ? { wasUnsafe:true, safeT:H.cueT+rt, commitT:H.cueT } : null;
+      applyResult(ok, o);
+      hideCueVisuals();
+      H.phase='wait';
+      H.waitT = lerp(0.95, 0.45, difficulty()) * (0.8 + Math.random()*0.45);
+    }
+    function respondCue(dir){
+      if(G.state!=='playing' || G.mode!=='handling' || H.phase!=='cued') return;
+      var now = performance.now()/1000;
+      if(dir===H.cueDir){ resolveDrill(true, now - H.cueT); }
+      else { resolveDrill(false, null); }
+    }
+    function commitCue(b){
+      var r = Math.random();
+      H.cueDir = r<0.4 ? 'left' : (r<0.8 ? 'right' : 'pull');
+      H.cueT = performance.now()/1000;
+      H.window = cueWindow();
+      H.hasHandStart = getHandPos(H.handStart);
+      H.puckStart.x = puck.x; H.puckStart.z = puck.z;
+      cueGates[H.cueDir].visible = true;
+      dangerDecal.position.x = b.x;
+      dangerDecal.material.opacity = 0.30;
+      dangerDecal.visible = true;
+      showFlash(CUE_TXT[H.cueDir], H.cueDir==='pull' ? '#ffb02e' : '#43e08a');
+      beep(980,0.09,'square',0.05,0); beep(1320,0.1,'square',0.045,0.08);
+      H.phase='cued';
+    }
+    function spawnDrillBall(){
+      var laneX = [-0.55, 0, 0.55][randi(3)];
+      var before = [];
+      for(var i=0;i<balls.length;i++) before.push(balls[i].active);
+      spawnBall(laneX, false);
+      H.ball = null;
+      for(var j=0;j<balls.length;j++){ if(balls[j].active && !before[j]){ H.ball=balls[j]; break; } }
+      if(H.ball){ H.ball.z = -26; H.ball.prevZ = -26; H.ball.mesh.position.set(H.ball.x, BALL_R, -26); H.phase='incoming'; }
+      else { H.waitT = 0.3; }
+    }
     function updateHandling(dt, spd){
       var now = performance.now()/1000;
       var presenting = renderer.xr.isPresenting;
-      /* puck target: keys */
+      var arActive = presenting && xrMode==='ar';
+      /* puck visual feedback: in VR/PC only (in MR the REAL puck is used) */
       var ks = 2.8*dt;
-      if(keys['w']||keys['arrowup']) puck.tz -= ks;
-      if(keys['s']||keys['arrowdown']) puck.tz += ks;
-      if(keys['a']||keys['arrowleft']) puck.tx -= ks;
-      if(keys['d']||keys['arrowright']) puck.tx += ks;
-      /* puck target: VR controller, and stick origin */
+      if(!presenting){
+        if(keys['w']||keys['arrowup']) puck.tz -= ks;
+        if(keys['s']||keys['arrowdown']) puck.tz += ks;
+        if(keys['a']||keys['arrowleft']) puck.tx -= ks;
+        if(keys['d']||keys['arrowright']) puck.tx += ks;
+      }
       var hasHand = presenting && getHandPos(handV);
-      if(hasHand){
-        puck.tx = clamp((handV.x - calib.centerX)*2.2, -PUCK.X, PUCK.X);
-        var tt = clamp((handV.z + 0.95)/0.7, 0, 1);
-        puck.tz = PUCK.ZMIN + tt*(PUCK.ZMAX-PUCK.ZMIN);
+      if(hasHand && H.neutral){
+        puck.tx = clamp(H.neutral.x + (handV.x - H.neutral.x)*2.0, -PUCK.X, PUCK.X);
+        puck.tz = clamp(H.neutral.z + (handV.z - H.neutral.z)*2.0, PUCK.ZMIN, PUCK.ZMAX);
       }
       puck.tx = clamp(puck.tx, -PUCK.X, PUCK.X);
       puck.tz = clamp(puck.tz, PUCK.ZMIN, PUCK.ZMAX);
       var kp = 1 - Math.pow(0.000001, dt);
       puck.x = lerp(puck.x, puck.tx, kp);
       puck.z = lerp(puck.z, puck.tz, kp);
+      puckMesh.visible = !arActive;
+      stickMesh.visible = !arActive;
       puckMesh.position.set(puck.x, 0, puck.z);
       if(hasHand){ stickFrom.copy(handV); } else { stickFrom.set(puck.x+0.5, 0.8, puck.z+1.25); }
       stickTo.set(puck.x, 0.05, puck.z);
       aimStick(stickFrom, stickTo);
 
-      /* spawn balls */
-      G.spawnTimer -= dt;
-      if(G.spawnTimer<=0){
-        spawnBallWave();
-        G.spawnTimer = lerp(1.15, 0.62, difficulty()) * (0.8 + Math.random()*0.45);
+      /* drill state machine */
+      if(H.phase==='wait'){
+        H.waitT -= dt;
+        if(H.waitT<=0) spawnDrillBall();
       }
-      var bSpd = spd*0.92;
-      for(var i=0;i<balls.length;i++){
-        var b=balls[i]; if(!b.active) continue;
-        b.prevZ=b.z; b.z += bSpd*dt;
-        if(b.feint && !b.feintDone && b.z>=-16){
-          b.feintDone=true; b.committed=true; b.commitT=now;
-          b.fromX=b.x;
-          b.toX=clamp(b.x + (Math.random()<0.5?-1:1)*(0.7+Math.random()*0.5), -2.7, 2.7);
-          b.slideT=0;
-        }
-        if(b.slideT<1){
-          b.slideT=Math.min(1, b.slideT + dt/0.4);
-          var ss=b.slideT*b.slideT*(3-2*b.slideT);
-          b.x=lerp(b.fromX, b.toX, ss);
-        }
+      var b = H.ball;
+      if(b && b.active){
+        b.prevZ = b.z; b.z += spd*0.8*dt;
         b.mesh.position.set(b.x, BALL_R, b.z);
-        b.mesh.rotation.x -= bSpd*dt/BALL_R;
-        if(b.committed){
-          var safe = Math.abs(puck.x - b.x) > 0.30;
-          if(!safe){ b.wasUnsafe=true; }
-          else if(b.wasUnsafe && b.safeT<0){ b.safeT=now; }
-        }
-        if(!b.resolved){
-          var dx=puck.x-b.x, dz=puck.z-b.z;
-          if(dx*dx + dz*dz < 0.0484){ /* 0.22^2 */
-            b.resolved=true; applyResult(false, b);
-            b.active=false; b.mesh.visible=false; continue;
-          }
-          if(b.z > 0.7){ b.resolved=true; applyResult(true, b); }
-        }
-        if(b.z > 3){ b.active=false; b.mesh.visible=false; }
+        b.mesh.rotation.x -= spd*0.8*dt/BALL_R;
+        if(H.phase==='incoming' && b.z >= -8){ commitCue(b); }
+        if(b.z > 2.5){ b.active=false; b.mesh.visible=false; if(H.ball===b) H.ball=null; }
       }
-
-      /* sweep */
-      G.sweepT -= dt;
-      if(G.sweepT<=0 && !sweep.active){
-        sweep.active=true; sweep.phase='in'; sweep.z=-54;
-        sweep.commitT=now; sweep.wasUnsafe=false; sweep.safeT=-1;
-        sweep.group.visible=true;
-        G.sweepT = 9 + Math.random()*4;
-        beep(300,0.15,'square',0.05,0);
-      }
-      if(sweep.active){
-        if(sweep.phase==='in'){
-          sweep.z += spd*0.85*dt;
-          var sSafe = !sweepDanger(puck.z);
-          if(!sSafe){ sweep.wasUnsafe=true; }
-          else if(sweep.wasUnsafe && sweep.safeT<0){ sweep.safeT=now; }
-          if(sweep.z >= -1.0){
-            sweep.z=-1.0;
-            applyResult(!sweepDanger(puck.z), sweep);
-            sweep.phase='hold'; sweep.holdT=0.35;
-          }
-        } else if(sweep.phase==='hold'){
-          sweep.holdT-=dt;
-          if(sweep.holdT<=0) sweep.phase='out';
-        } else {
-          sweep.z -= 16*dt;
-          if(sweep.z < -10){ sweep.active=false; sweep.group.visible=false; }
+      if(H.phase==='cued'){
+        /* pulse the cued gate */
+        var pulse = 0.75 + Math.sin(now*10)*0.25;
+        cueGates[H.cueDir].children[1].material.opacity = pulse;
+        var elapsedCue = now - H.cueT;
+        var judged = false, ok = false;
+        if(hasHand && H.hasHandStart){
+          var dx = handV.x - H.handStart.x, dz = handV.z - H.handStart.z;
+          var TH = 0.12;
+          if(H.cueDir==='left'){ if(dx < -TH){ judged=true; ok=true; } else if(dx > TH || dz > TH){ judged=true; } }
+          else if(H.cueDir==='right'){ if(dx > TH){ judged=true; ok=true; } else if(dx < -TH || dz > TH){ judged=true; } }
+          else if(H.cueDir==='pull'){ if(dz > TH){ judged=true; ok=true; } else if(Math.abs(dx) > TH){ judged=true; } }
+        } else if(!presenting){
+          var pdx = puck.x - H.puckStart.x, pdz = puck.z - H.puckStart.z;
+          var PTH = 0.28;
+          if(H.cueDir==='left'){ if(pdx < -PTH){ judged=true; ok=true; } else if(pdx > PTH || pdz > PTH){ judged=true; } }
+          else if(H.cueDir==='right'){ if(pdx > PTH){ judged=true; ok=true; } else if(pdx < -PTH || pdz > PTH){ judged=true; } }
+          else if(H.cueDir==='pull'){ if(pdz > PTH){ judged=true; ok=true; } else if(Math.abs(pdx) > PTH){ judged=true; } }
         }
-        if(sweep.active) sweep.group.position.z = sweep.z;
+        if(judged){ resolveDrill(ok, ok ? elapsedCue : null); }
+        else if(elapsedCue > H.window){ resolveDrill(false, null); }
       }
     }
 
@@ -742,7 +841,7 @@
       c.fillStyle='rgba(126,203,232,0.25)'; c.fillRect(30,196,W-60,20);
       c.fillStyle='#7ecbe8'; c.fillRect(30,196,(W-60)*clamp(G.timeLeft/SESSION_LEN,0,1),20);
       c.font='700 28px sans-serif'; c.fillStyle='#9fc3d4';
-      c.fillText(G.mode==='handling' ? '― ハンドリングモード ―' : '― ボディ回避モード ―', W/2, 40);
+      c.fillText(G.mode==='handling' ? '― 反応ハンドリング ―' : '― ボディ回避モード ―', W/2, 40);
       hudPanel.tex.needsUpdate = true;
     }
     function drawMenuPanel(lines, accent){
@@ -761,13 +860,14 @@
     function showMenuReady(){
       if(G.mode==='handling'){
         drawMenuPanel([
-          { text:'ハンドリングモード', size:64, bold:true, y:110, color:'#ffb02e' },
-          { text:'小ボールをパックに当てるな！', size:42, y:185 },
-          { text:'コントローラーの位置＝パックの位置', size:38, y:270, color:'#7ecbe8' },
-          { text:'ボール：パックを横へ逃がせ', size:40, y:345, color:'#d7f74a' },
-          { text:'スイープ：引くか、奥へ押し出せ', size:40, y:410, color:'#ffcf7d' },
-          { text:'体はその場でOK。まわりを確認して、', size:36, y:505, color:'#9fc3d4' },
-          { text:'トリガーを引くとスタート（60秒）', size:38, y:560, color:'#9fc3d4' }
+          { text:'反応ハンドリング', size:64, bold:true, y:110, color:'#ffb02e' },
+          { text:'実物のスティックとパックで練習！', size:42, y:185 },
+          { text:'レディポジションでパックをブレードに当て、', size:36, y:262, color:'#7ecbe8' },
+          { text:'その位置が基準（キャリブレーション）になる', size:36, y:308, color:'#7ecbe8' },
+          { text:'ボールが寄ったら合図が出る：', size:40, y:385, color:'#d7f74a' },
+          { text:'←左 ／ 右→ ／ 引け！ の方向へ', size:40, y:445, color:'#d7f74a' },
+          { text:'実物のパックを素早く動かしてな', size:38, y:520, color:'#9fc3d4' },
+          { text:'トリガーを引くとスタート（60秒）', size:36, y:575, color:'#9fc3d4' }
         ]);
         menuPanel.mesh.visible = true;
         return;
@@ -994,11 +1094,17 @@
       puck.x=0; puck.z=-1.0; puck.tx=0; puck.tz=-1.0;
       G.sweepT=7;
       var handling = (G.mode==='handling');
-      zoneMesh.visible=handling; puckMesh.visible=handling; stickMesh.visible=handling;
+      var arActive = renderer.xr.isPresenting && xrMode==='ar';
+      zoneMesh.visible = handling && !arActive;
+      puckMesh.visible = handling && !arActive;
+      stickMesh.visible = handling && !arActive;
+      H.phase='wait'; H.waitT=1.1; H.ball=null; H.cueDir=null; H.neutral=null;
+      hideCueVisuals();
+      if(handling && renderer.xr.isPresenting && getHandPos(handV)){ H.neutral = handV.clone(); }
       startScreen.classList.add('hidden'); endScreen.classList.add('hidden');
       hudEl.classList.add('on');
       laneIndEl.classList.toggle('on', !handling);
-      touchCtl.classList.toggle('on', !handling);
+      touchCtl.classList.add('on');
       menuPanel.mesh.visible=false;
       hudPanel.mesh.visible = renderer.xr.isPresenting;
       if(renderer.xr.isPresenting){ calib.pending=true; calib.pendingFrames=0; }
@@ -1009,6 +1115,7 @@
       for(var i=0;i<pool.length;i++){ pool[i].active=false; setObstacleVisible(pool[i], false); }
       for(var j=0;j<balls.length;j++){ balls[j].active=false; balls[j].mesh.visible=false; }
       sweep.active=false; sweep.group.visible=false;
+      hideCueGates(); dangerDecal.visible=false;
       hudEl.classList.remove('on'); laneIndEl.classList.remove('on'); touchCtl.classList.remove('on');
       safetyWarn.classList.remove('on');
       var total = G.dodged + G.hits;
@@ -1022,9 +1129,9 @@
       $('stHit').textContent = G.hits;
       $('endComment').textContent = G.mode==='handling' ? (
         rate>=90 ? 'ほぼ完璧！パックさばきが冴えてるで。' :
-        rate>=70 ? 'ええ感じ。ボールの進路を早めに読むともっと安定するで。' :
-        rate>=40 ? '悪くない。スイープは引くか押し出すか早めに決めてな。' :
-                   'まずはボールをよく見て、小さく素早くパックを逃がそう。'
+        rate>=70 ? 'ええ感じ。ボールの寄りを見て、合図に迷わず動けとるで。' :
+        rate>=40 ? '悪くない。合図が出た瞬間に初動を早くするのがカギやで。' :
+                   'まずはボールをよく見て、合図の方向へ小さく素早く動かそう。'
       ) : (
         rate>=90 ? 'ほぼ完璧！初動の速さが光ってるで。' :
         rate>=70 ? 'ええ感じ。フェイントの見極めをもうちょい早く。' :
@@ -1054,6 +1161,8 @@
       $('modeHandling').classList.toggle('sel', m==='handling');
       $('bodyInfo').style.display = m==='body' ? '' : 'none';
       $('handlingInfo').style.display = m==='handling' ? '' : 'none';
+      $('btnDuck').firstChild.textContent = m==='handling' ? '引く' : 'しゃがむ';
+      $('btnDuck').querySelector('span').textContent = m==='handling' ? 'PULL' : 'DUCK';
       ensureAudio(); beep(520,0.06,'square',0.03,0);
     }
     $('modeBody').addEventListener('click', function(){ setMode('body'); });
@@ -1063,6 +1172,7 @@
       endScreen.classList.add('hidden');
       startScreen.classList.remove('hidden');
       zoneMesh.visible=false; puckMesh.visible=false; stickMesh.visible=false;
+      hideCueGates(); dangerDecal.visible=false;
     });
     $('centerBtn').addEventListener('click', function(){
       if(renderer.xr.isPresenting){ calib.pending=true; calib.pendingFrames=0; }
@@ -1081,6 +1191,11 @@
       if(G.state==='playing' && G.mode==='body'){
         if(e.key==='ArrowLeft'||e.key.toLowerCase()==='a'){ moveLane(-1); }
         if(e.key==='ArrowRight'||e.key.toLowerCase()==='d'){ moveLane(1); }
+      }
+      if(G.state==='playing' && G.mode==='handling' && !renderer.xr.isPresenting){
+        if(e.key==='ArrowLeft'||e.key.toLowerCase()==='a'){ respondCue('left'); }
+        if(e.key==='ArrowRight'||e.key.toLowerCase()==='d'){ respondCue('right'); }
+        if(e.key==='ArrowDown'||e.key.toLowerCase()==='s'){ respondCue('pull'); }
       }
       if(e.key===' '||e.key==='ArrowDown'){ e.preventDefault(); }
       if((e.key==='Enter') && G.state!=='playing'){ startGame(); }
@@ -1102,9 +1217,9 @@
         el.addEventListener(ev, function(){ el.classList.remove('held'); if(up) up(); });
       });
     }
-    bindHold($('btnLeft'), function(){ if(G.state==='playing') moveLane(-1); });
-    bindHold($('btnRight'), function(){ if(G.state==='playing') moveLane(1); });
-    bindHold($('btnDuck'), function(){ player.duckKey=true; }, function(){ player.duckKey=false; });
+    bindHold($('btnLeft'), function(){ if(G.state!=='playing') return; if(G.mode==='handling' && !renderer.xr.isPresenting){ respondCue('left'); } else { moveLane(-1); } });
+    bindHold($('btnRight'), function(){ if(G.state!=='playing') return; if(G.mode==='handling' && !renderer.xr.isPresenting){ respondCue('right'); } else { moveLane(1); } });
+    bindHold($('btnDuck'), function(){ if(G.mode==='handling' && G.state==='playing' && !renderer.xr.isPresenting){ respondCue('pull'); } player.duckKey=true; }, function(){ player.duckKey=false; });
 
     /* ================= input: mouse drag on canvas ================= */
     var drag=null;
@@ -1157,8 +1272,9 @@
       /* ボタンは無効化で終わらせず、常に押せるようにする。
          押した時に再チェック＋セッション要求をその場で試す。 */
       vrBtn.disabled=false; vrAgainBtn.disabled=false;
-      vrBtn.textContent = on ? 'VRに入る（Quest）' : 'VRに入る（押して再チェック）';
-      vrAgainBtn.textContent = on ? 'VRでもう一回' : 'VRでもう一回（押して再チェック）';
+      vrBtn.textContent = on ? 'MRで練習（パススルー）' : 'MRで練習（押して再チェック）';
+      vrAgainBtn.textContent = on ? 'MRでもう一回' : 'MRでもう一回（押して再チェック）';
+      var vb=$('vrOnlyBtn'); if(vb){ vb.disabled=false; vb.textContent = on ? 'VRで練習（仮想リンク）' : 'VRで練習（押して再チェック）'; }
     }
     function diagRow(label, value, cls){
       var row=document.createElement('div'); row.className='row';
@@ -1180,6 +1296,11 @@
           xrDiag.appendChild(diagRow('immersive-vr', d.supported ? '対応 OK' : '非対応と判定された', d.supported?'ok':'ng'));
         }
       }
+      if(d.arSupported===null || d.arSupported===undefined){
+        xrDiag.appendChild(diagRow('immersive-ar', d.hasXR ? '確認中…' : '―', ''));
+      } else {
+        xrDiag.appendChild(diagRow('immersive-ar', d.arSupported ? '対応 OK（パススルーMRで練習できる）' : '非対応（VRモードで練習）', d.arSupported?'ok':'ng'));
+      }
       if(d.error){
         xrDiag.appendChild(diagRow('エラー詳細', d.error, 'ng'));
       }
@@ -1197,6 +1318,13 @@
         ua: (navigator.userAgent||'')
       };
       renderDiag(d);
+      if(navigator.xr){
+        try{
+          navigator.xr.isSessionSupported('immersive-ar').then(function(ok){
+            d.arSupported = ok; renderDiag(d);
+          }, function(){ d.arSupported = false; renderDiag(d); });
+        }catch(e){ d.arSupported = false; }
+      }
       if(!navigator.xr){
         setVrState(false);
         xrNote.textContent='この開き方ではWebXR自体が無いわ。アプリ内ブラウザや埋め込み表示やとVRは使えへんから、Quest Browserでこのページを直接開いてな。';
@@ -1210,7 +1338,7 @@
         renderDiag(d);
         setVrState(ok);
         if(ok){
-          xrNote.textContent='Quest 3対応を確認。ヘッドセットをかぶって「VRに入る」を押してな。';
+          xrNote.textContent='Quest 3対応を確認。実物のスティックとパックを用意して、「MRで練習（パススルー）」を押してな。部屋はそのまま見えるで。';
         } else if(err && err.name==='SecurityError'){
           xrNote.textContent='セキュリティポリシーでWebXRがブロックされとる（SecurityError）。埋め込み表示の中やと起きやすいやつや。下の「直接開く」ボタンで単独ページとして開き直してから、もう一回試してみてな。';
         } else if(embedded){
@@ -1250,38 +1378,46 @@
     setVrState(false);
     diagnoseXR();
 
-    function enterVR(){
+    function enterXR(forceVR){
       ensureAudio();
       if(!navigator.xr){
         diagnoseXR();
         return;
       }
-      xrNote.textContent='VRセッションを開始中…';
-      /* 機能要求を段階的に弱めながら再試行する
-         （参照空間の要求が厳しすぎて弾かれる環境への対策） */
-      var attempts=[
+      xrNote.textContent='セッションを開始中…';
+      var attemptsVR=[
         { optionalFeatures:['local-floor','bounded-floor'] },
         { optionalFeatures:['local'] },
         {}
       ];
-      var idx=0;
-      function onSession(session){
+      var attemptsAR=[
+        { optionalFeatures:['local-floor','bounded-floor'] },
+        { optionalFeatures:['local'] },
+        {}
+      ];
+      function onSession(session, mode){
+        xrMode = mode;
         var feats = session.enabledFeatures || [];
         var hasFloor=false;
         for(var fi=0; fi<feats.length; fi++){ if(feats[fi]==='local-floor') hasFloor=true; }
         try{ renderer.xr.setReferenceSpaceType(hasFloor ? 'local-floor' : 'local'); }catch(e){}
         session.addEventListener('end', function(){
           hudPanel.mesh.visible=false;
-          if(G.state==='playing'){ menuPanel.mesh.visible=false; }
+          menuPanel.mesh.visible=false;
+          applyXRMode();
         });
         session.addEventListener('select', function(){
           if(G.state!=='playing'){ startGame(); }
         });
         function afterSet(){
           setVrState(true);
+          applyXRMode();
           calib.pending=true; calib.pendingFrames=0;
           if(G.state!=='playing'){ startGame(); }
           else { hudPanel.mesh.visible=true; }
+          if(mode==='ar'){
+            xrNote.textContent='MR（パススルー）で開始したで。部屋と実物のスティック・パックが見える状態で練習してな。';
+          }
         }
         var p=null;
         try{ p = renderer.xr.setSession(session); }catch(e){ p=null; }
@@ -1297,26 +1433,46 @@
       }
       function onSessionError(err){
         if(err && err.name==='SecurityError'){
-          xrNote.textContent='VRを開始できへんかった（'+xrErrText(err)+'）。埋め込み表示の中やとVR許可が無くて弾かれるやつや。下の「直接開く」ボタンで単独ページとして開き直してから試してみてな。';
+          xrNote.textContent='開始できへんかった（'+xrErrText(err)+'）。埋め込み表示の中やとXR許可が無くて弾かれるやつや。下の「直接開く」ボタンで単独ページとして開き直してから試してみてな。';
         } else if(err && err.name==='NotSupportedError' && embedded){
-          xrNote.textContent='VRを開始できへんかった（'+xrErrText(err)+'）。埋め込み表示（iframe）が原因の可能性が高いで。下の「直接開く」ボタンで単独ページとして開き直してから試してみてな。';
+          xrNote.textContent='開始できへんかった（'+xrErrText(err)+'）。埋め込み表示（iframe）が原因の可能性が高いで。下の「直接開く」ボタンで単独ページとして開き直してから試してみてな。';
         } else {
-          xrNote.textContent='VRセッションを開始できへんかった（'+xrErrText(err)+'）。診断を更新しとくから、下の内容も見てみてな。';
+          xrNote.textContent='セッションを開始できへんかった（'+xrErrText(err)+'）。診断を更新しとくから、下の内容も見てみてな。';
         }
         var n2=$('xrNote2'); if(n2){ n2.textContent=xrNote.textContent; }
         diagnoseXR();
       }
-      function tryNext(){
-        navigator.xr.requestSession('immersive-vr', attempts[idx]).then(onSession).catch(function(err){
+      function tryVR(idx){
+        navigator.xr.requestSession('immersive-vr', attemptsVR[idx]).then(function(session){
+          onSession(session, 'vr');
+        }).catch(function(err){
           idx++;
-          if(idx<attempts.length && err && err.name!=='NotAllowedError' && err.name!=='SecurityError'){ tryNext(); }
+          if(idx<attemptsVR.length && err && err.name!=='NotAllowedError' && err.name!=='SecurityError'){ tryVR(idx); }
           else { onSessionError(err); }
         });
       }
-      tryNext();
+      function tryAR(idx){
+        navigator.xr.requestSession('immersive-ar', attemptsAR[idx]).then(function(session){
+          onSession(session, 'ar');
+        }).catch(function(err){
+          idx++;
+          if(idx<attemptsAR.length && err && err.name!=='NotAllowedError' && err.name!=='SecurityError'){ tryAR(idx); }
+          else if(err && (err.name==='NotSupportedError' || err.name==='NotAllowedError' || err.name==='SecurityError')){
+            /* ARが使えない環境では仮想リンクのVRへ自動フォールバック */
+            if(err.name==='NotSupportedError'){ tryVR(0); }
+            else { onSessionError(err); }
+          }
+          else { tryVR(0); }
+        });
+      }
+      if(forceVR){ tryVR(0); } else { tryAR(0); }
     }
-    vrBtn.addEventListener('click', enterVR);
-    vrAgainBtn.addEventListener('click', enterVR);
+    vrBtn.addEventListener('click', function(){ enterXR(false); });
+    vrAgainBtn.addEventListener('click', function(){ enterXR(false); });
+    var vrOnlyBtn=$('vrOnlyBtn');
+    if(vrOnlyBtn){ vrOnlyBtn.addEventListener('click', function(){ enterXR(true); }); }
+    var vrOnlyAgainBtn=$('vrOnlyAgainBtn');
+    if(vrOnlyAgainBtn){ vrOnlyAgainBtn.addEventListener('click', function(){ enterXR(true); }); }
 
     /* thumbstick polling (VR stationary fallback) */
     function pollSticks(dt){
@@ -1345,6 +1501,7 @@
       var dt = Math.min(clock.getDelta(), 0.05);
       try{
         var presenting = renderer.xr.isPresenting;
+        applyXRMode();
 
         /* --- calibration capture (first stable frames in VR) --- */
         if(presenting && calib.pending){
